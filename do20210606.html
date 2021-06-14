@@ -1,0 +1,108 @@
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>myDo</title>
+		<style>
+			span {
+				background:linear-gradient(transparent 60%,rgb(250, 188, 167) 0%);
+			}
+			h1 {
+				/*---characters---*/
+				font-size: 14pt;
+				font-weight: normal;
+				/*---box---*/
+				border-color: orange;
+				border-width: 1px;
+				border-style: dashed;
+				background-color: rgb(247, 197, 105);
+			}
+			ul {
+				/*---box---*/
+				padding-left: 20px;
+			}
+			li {
+				/*---list-marks---*/
+				/* list-style-type:none; */
+				/*---characters---*/
+				font-size: 12pt;
+				margin: 1pt;
+				/*---box---*/
+			}
+			.parent ul{display: none;}
+			.active ul {display: block;}
+		</style>
+	</head>
+
+	<body>
+		<h1>myDo</h1>
+		<ul>
+			<li class="parent" onclick="func1(this)"><span>Daiy</span>
+				<ul>
+					<li>身体を起こす
+						<ul>
+							<li>風呂</li>
+							<li>湯飲み</li>
+						</ul>
+					</li>
+					<li>エチケット
+						<ul>
+							<li>歯磨き</li>
+						</ul>
+					</li>
+					
+					<li>メンタル
+						<ul>
+							<li>トイレ洗い</li>
+						</ul>
+					</li>
+					<li>身だしなみ整える
+						<ul>
+							<li>髪セット</li>
+						</ul>
+					</li>
+					<li>ゴルフ
+						<ul>
+							<li>素振り</li>
+							<li>PT</li>
+							<li>60°リスト</li>
+							<li>60°</li>
+							<li>52°</li>
+							<li>46°</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><span>VBA</span><br>
+				<ul>
+					<li>Google検索&結果記録マクロ</li>
+				</ul>
+			<li><span>ペーパレス化</span><br>
+				<ul>
+					<li>納品された冊数の再カウント</li>
+					<li>スキャンピーへ返信</li>
+				</ul>
+			</li>			
+			<li><span>Github</span><br>
+				<ul>
+					<li>作ったものの一時保管とポートフォリオを作る方法を調べる</li>
+				</ul>
+			</li>
+			<li><span>暗記カードアプリ</span><br>
+				<ul>
+					<li>全ての機能だと結構高度になりそうなので一旦リリースして、あとから機能追加していきたい</li>
+					<li>アプリのテスト方法を知りたい</li>
+				</ul>
+			</li>
+			<li><span>Buy</span><br>
+				✓ダンベル<br>
+				✓ダンベル用グローブ<br>
+				✓滑り止め付き軍手→ダンベル利用後必要に応じて購入
+			</li>			
+			<li><span>html</span><br>
+				✓htmlでメモをサクサク作りたい
+			</li>
+		</ul>
+		<script> function func1(e){e.classList.toggle("active");}</script>
+	</body>
+</html>
+
